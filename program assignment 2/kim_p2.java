@@ -32,6 +32,7 @@ class kim_p2 {
                     output.writeInt(tokens[1].length());
                     for(int i = 0; i < tokens[1].length(); i++)
                         output.writeChar(tokens[1].charAt(i));
+                }
                 if(tokens[0].equals("double")) {
                     output.writeChars("d");
                     output.writeDouble(Double.parseDouble(tokens[1]));
@@ -58,7 +59,6 @@ class kim_p2 {
                     output.writeInt(values.length);
                     for(int i = 0; i < values.length; i++)
                         output.writeInt(Integer.parseInt(values[i]));
-                }
                 }
                 if(tokens[0].equals("double array")) {
                     output.writeChars("e");
